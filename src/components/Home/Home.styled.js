@@ -8,7 +8,7 @@ export const Wrapper = styled.h1`
   margin-right: -50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #333;
+  color: red;
   margin-bottom: 2rem;
   animation: fadeIn 2s ease-in-out;
 

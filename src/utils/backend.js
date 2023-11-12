@@ -14,7 +14,7 @@ export async function updateFollowers(userId, action) {
         const response = await axios.get(url);
         const user = response.data;
 
-        const updatedFollowers = action === "increment" ? user.followers + 1 : user.followers - 1;
+        const updatedFollowers = action === "increment" ? user.followers - 1 : user.followers + 1;
         const data = await axios.put(url, { ...user, followers: updatedFollowers });
         return data.data;
     } catch (err) { 
