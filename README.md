@@ -1,29 +1,29 @@
-Проект Twitter Проект для створення карток твітів з додатковою інтерактивністю
-при клікові на кнопку "Follow".
+The Twitter project A project for creating tweet cards with additional
+interactivity when clicking the "Follow" button.
 
-Верстка фіксована в пікселях, семантична та валідна. Немає помилок в консолі
-браузера. Робота виконана на нативному JS з використанням збірників або на
-React. Інтерактивність працює відповідно до технічного завдання. Код
-відформатований та без коментарів. У репозиторії є файл README.md. Технічне
-завдання Відповідно до макету, необхідно реалізувати картки користувачів. При
-клікові на кнопку "Follow", текст змінюється на "Following". Також змінюється
-колір кнопки. Кількість фоловерів збільшується на 1.
+The layout is fixed in pixels, semantic and valid. There are no errors in the
+browser console. The work is done on native JS using collections or on React.
+Interactivity works according to the terms of reference. The code is formatted
+and uncommented. There is a README.md file in the repository. Technical task
+According to the layout, it is necessary to implement user cards. When clicking
+on the "Follow" button, the text changes to "Following". The color of the button
+also changes. The number of followers increases by 1.
 
-При оновленні сторінки, стан кнопки та кількість фоловерів залишається
-незмінними.
+When updating the page, the state of the button and the number of followers
+remain unchanged.
 
-При повторному клікові на кнопку, її текст та колір змінюються на початковий
-стан. Також кількість фоловерів зменшується на 1.
+When you click the button again, its text and color change to their original
+state. Also, the number of followers decreases by 1.
 
-Використано бібліотеку mockapi.io для бекенду- користувача з полями: id, user,
-tweets, followers, avatar . Зображення аватарів мають бути прописані окремими
-url у властивості “avatar”.
+The mockapi.io library was used for the user backend with fields: id, user,
+tweets, followers, avatar. Avatar images must be specified with separate urls in
+the “avatar” property.
 
-Має бути від 12 юзерів з різними значеннями(на ваш розсуд) в базі. Реалізовано
-пагінацію. На одній сторінці пагінації має відображатися від 3 твітів, решта
-підгружатись при натисканні Load More.
+There should be from 12 users with different values (at your discretion) in the
+database. Implemented pagination. One pagination page should display at least 3
+tweets, the rest should be loaded when you click Load More.
 
-У застосунку прописані маршрути. Якщо користувач зайшов за неіснуючим маршрутом,
-його необхідно перенаправляти на домашню сторінку. '/' – компонент Home, домашня
-сторінка. '/tweets' - компонент tweets, сторінка із відображенням твітів з
-кнопкою Back, яка веде на головну сторінку.
+Routes are prescribed in the application. If the user entered by a non-existent
+route, he must be redirected to the home page. '/' – Home component, home page.
+'/tweets' - the tweets component, a page displaying tweets with a back button
+that leads to the main page.
