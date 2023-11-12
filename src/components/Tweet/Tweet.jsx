@@ -5,10 +5,10 @@ import { updateFollowers } from '../../utils/backend';
 import { CardContainer, CardImage, Line, Logo } from './Tweet.styled';
 import StatisticsList from 'components/StatisticsList/StatisticsList';
 
-const Tweet = ({ imageURL, folowers, tweets, id }) => {
+const Tweet = ({ imageURL, followers, tweets, id }) => {
   const TOKEN = 'followingsList';
   const [isLoading, setIsLoading] = useState(false);
-  const [currentFollowers, setCurrentFollowers] = useState(folowers);
+  const [currentFollowers, setCurrentFollowers] = useState(followers);
   const [isActive, setIsActive] = useState(
     JSON.parse(localStorage.getItem(TOKEN)) !== null &&
       JSON.parse(localStorage.getItem(TOKEN)).find(user => user === id)
@@ -49,7 +49,7 @@ const Tweet = ({ imageURL, folowers, tweets, id }) => {
         <CardImage />
         <Line />
         <Avatar src={imageURL} />
-        <StatisticsList folowers={currentFollowers} tweets={tweets} />
+        <StatisticsList followers={currentFollowers} tweets={tweets} />
         <Button
           isActive={isActive}
           onClick={handleClick}

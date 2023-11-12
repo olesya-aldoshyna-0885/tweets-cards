@@ -1,6 +1,8 @@
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import UserList from 'components/UserList/UserList';
-import { useEffect, useMemo, useState } from 'react';
-import { getUsers } from 'utils/backend';
+import MainButton from 'components/MainButton/MainButton';
+import { getUsers } from '../utils/backend';
 import { LoadBtn } from './TweetsPage.styled';
 import { RingLoader } from 'react-spinners';
 
@@ -32,11 +34,12 @@ const TweetsPage = () => {
   const handlePage = () => {
     setPage(prev => prev + 1);
   };
-  //   const location = useLocation();
-  //   const backLinkHref = useRef(location.state?.from ?? `/`);
+  const location = useLocation();
+  const backLinkHref = useRef(location.state?.from ?? `/`);
 
   return (
     <>
+      <MainButton to={backLinkHref.current} />
       <UserList users={users} />
       {newPages && users.length !== 0 && (
         <LoadBtn onClick={handlePage}>

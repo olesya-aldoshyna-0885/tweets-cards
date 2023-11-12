@@ -1,18 +1,18 @@
-import Tweet from 'components/Tweet/Tweet';
+import Tweet from '../Tweet/Tweet';
 import { GridContainer } from './UserList.syled';
 
 const UserList = ({ users }) => {
   return (
     <>
       <GridContainer>
-        {users.map(({ avatar, folowers, tweets, id }) => {
+        {users.map(({ avatar, followers, tweets, id }) => {
           return (
             <Tweet
               imageURL={avatar}
-              folowers={folowers}
+              followers={followers}
               tweets={tweets}
-              id={id}
               key={id}
+              id={id}
             />
           );
         })}
