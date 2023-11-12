@@ -3,7 +3,7 @@ import Avatar from '../Avatar/Avatar';
 import Button from '../Button/Button';
 import { CardContainer, CardImage, Line, Logo } from './Tweet.styled';
 
-const Tweet = ({ imageURL }) => {
+const Tweet = ({ imageURL, folowers, tweets, id }) => {
   const [isActive, setIsActive] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
