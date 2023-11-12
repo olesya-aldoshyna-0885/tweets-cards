@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.7acaea2f.css",
-    "main.js": "/react-homework-template/static/js/main.07d3183d.js",
-    "index.html": "/react-homework-template/index.html",
-    "main.7acaea2f.css.map": "/react-homework-template/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/react-homework-template/static/js/main.07d3183d.js.map"
+    "main.css": "/tweets-cards/static/css/main.490a713d.css",
+    "main.js": "/tweets-cards/static/js/main.176b2db8.js",
+    "static/media/card-image.png": "/tweets-cards/static/media/card-image.032662a2a907475127d7.png",
+    "index.html": "/tweets-cards/index.html",
+    "main.490a713d.css.map": "/tweets-cards/static/css/main.490a713d.css.map",
+    "main.176b2db8.js.map": "/tweets-cards/static/js/main.176b2db8.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.490a713d.css",
+    "static/js/main.176b2db8.js"
   ]
 }
