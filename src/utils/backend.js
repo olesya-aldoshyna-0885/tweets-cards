@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://64243f43d6152a4d480a4f40.mockapi.io";
+const BASE_URL = "https://64243f43d6152a4d480a4f40.mockapi.io";
 
 export const getUsers = async (page) => {
      const response = await axios.get(`${BASE_URL}/users?page=${page}&limit=3`);
