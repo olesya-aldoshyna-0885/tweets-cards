@@ -1,7 +1,8 @@
 // import TweetsPage from 'pages/TweetsPage';
+import './App.css';
 import Tweet from './Tweet/Tweet';
 
-export const App = () => {
+const App = () => {
   return (
     <div>
       {/* <TweetsPage /> */}
@@ -9,3 +10,5 @@ export const App = () => {
     </div>
   );
 };
+
+export default App;
